@@ -9,12 +9,12 @@ using UnityEngine;
 public class FirstPersonController_Sam : MonoBehaviour
 {
 
-    public AudioClip music;
+    //public AudioClip music;
 
 
-    private AudioSource musicSource;
+    //private AudioSource musicSource;
 
-    private bool musicPaused;
+    //private bool musicPaused;
 
 
 
@@ -113,12 +113,13 @@ public class FirstPersonController_Sam : MonoBehaviour
 
     private float rotationX = 0;
 
-
+    /*
     private void Start()
     {
+        musicSource = GetComponent<AudioSource>();
         musicPaused = true;
     }
-
+    */
 
 
 
@@ -291,7 +292,15 @@ public class FirstPersonController_Sam : MonoBehaviour
         zoomRoutine = null;
     }
 
-
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("musicTrigger"))
+        {
+            
+        }
+    }
+    */
 
 
 
